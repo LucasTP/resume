@@ -10,7 +10,7 @@ module.exports = async ({ outfile }) => {
   const server = new Server({ port });
 
   const [browser] = await Promise.all([
-    puppeteer.launch({ headless: true }),
+    puppeteer.launch({ headless: 'new' }),
     server.start(),
   ]);
 
@@ -18,7 +18,7 @@ module.exports = async ({ outfile }) => {
 
   await page.goto(`http://localhost:${port}`);
 
-  await page.emulateMedia('print');
+  await page.emulateMediaType('print');
 
   const pdf = await page.pdf({
     path: outfile,
