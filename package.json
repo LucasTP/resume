@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/LucasTP/resume/issues"
   },
-  "homepage": "https://github.com/LucasTP/resume#readme",
+  "homepage": "https://lucastp.github.io/resume/",
   "dependencies": {
     "imagemagick": "^0.1.3",
     "puppeteer": "^21.0.2",
